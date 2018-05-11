@@ -6,7 +6,7 @@
 package org.myorg.empaquetado;
 
 /**
- *
+ * Clase Objeto para guardar los datos del programa a empaquetar.
  * @author Joshua
  */
 public class Datos {
