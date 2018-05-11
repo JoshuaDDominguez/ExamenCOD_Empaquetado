@@ -12,16 +12,16 @@ package org.myorg.empaquetado;
  */
 public class Datos {
 
-    String vBcategory, vOutdir, vOutfiles, Vsrcfiles, Vappclass, vName, Vtitle;
+    String vBcategory, vOutdir, vOutfiles, Vsrcdir, Vappclass, vName, Vtitle;
 
     public Datos() {
     }
 
-    public Datos(String vBcategory, String vOutdir, String vOutfiles, String Vsrcfiles, String Vappclass, String vName, String Vtitle) {
+    public Datos(String vBcategory, String vOutdir, String vOutfiles, String Vsrcdir, String Vappclass, String vName, String Vtitle) {
         this.vBcategory = vBcategory;
         this.vOutdir = vOutdir;
         this.vOutfiles = vOutfiles;
-        this.Vsrcfiles = Vsrcfiles;
+        this.Vsrcdir = Vsrcdir;
         this.Vappclass = Vappclass;
         this.vName = vName;
         this.Vtitle = Vtitle;
@@ -39,8 +39,8 @@ public class Datos {
         return vOutfiles;
     }
 
-    public String getVsrcfiles() {
-        return Vsrcfiles;
+    public String getVsrcdir() {
+        return Vsrcdir;
     }
 
     public String getVappclass() {
@@ -67,8 +67,8 @@ public class Datos {
         this.vOutfiles = vOutfiles;
     }
 
-    public void setVsrcfiles(String Vsrcfiles) {
-        this.Vsrcfiles = Vsrcfiles;
+    public void setVsrcdir(String Vsrcdir) {
+        this.Vsrcdir = Vsrcdir;
     }
 
     public void setVappclass(String Vappclass) {
@@ -85,7 +85,7 @@ public class Datos {
 
     @Override
     public String toString() {
-        return "Datos{" + "vBcategory=" + vBcategory + ", vOutdir=" + vOutdir + ", vOutfiles=" + vOutfiles + ", Vsrcfiles=" + Vsrcfiles + ", Vappclass=" + Vappclass + ", vName=" + vName + ", Vtitle=" + Vtitle + '}';
+        return "Datos{" + "vBcategory=" + vBcategory + ", vOutdir=" + vOutdir + ", vOutfiles=" + vOutfiles + ", Vsrcdir=" + Vsrcdir + ", Vappclass=" + Vappclass + ", vName=" + vName + ", Vtitle=" + Vtitle + '}';
     }
 
 }
