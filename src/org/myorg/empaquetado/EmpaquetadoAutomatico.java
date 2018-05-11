@@ -7,7 +7,9 @@ package org.myorg.empaquetado;
 
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
+import java.io.BufferedInputStream;
 import java.io.*;
+import java.util.Locale;
 import javax.swing.JOptionPane;
 import org.openide.awt.ActionID;
 import org.openide.awt.ActionReference;
@@ -56,9 +58,15 @@ public final class EmpaquetadoAutomatico implements ActionListener {
 
         try {
 
-            // Creamos el objeto runtime y le pasamos el String anteriormente creado
+            // Ejecutamos el comando enteriormente creado
             Runtime rt = Runtime.getRuntime();
             Process pr = rt.exec(comando);
+
+            InputStream is = pr.getInputStream();
+            BufferedInputStream bufferedinputstream = new BufferedInputStream(is);
+            
+            JOptionPane.showInputDialog("Ejecutado con exito");
+            
         } catch (IOException ex) {
             Exceptions.printStackTrace(ex);
         }
